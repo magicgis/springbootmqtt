@@ -1,0 +1,29 @@
+server:
+  port: 8083
+mqtt:
+  # Connect with clients viw ws://9090
+  websocket_port: 9090
+spring:
+  main:
+    web:
+      environment: false
+  data:
+    mongodb:
+      uri: mongodb://192.168.1.1:27017
+      database: springboot-moquette-dev
+      #repositories:
+      #  enabled: true
+config_properties:
+  drop_mongo_database: false
+  topic_base_prefix: iot
+  client_prefix: koakh-iot
+  moke_users:
+     - kapa
+     - zila
+     - alex
+     - jomo
+     - dani
+     - joni
+     - pete
+service:
+    message: Hello World from Broker
